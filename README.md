@@ -8,4 +8,4 @@ Our application will be an API tool to fetch and post items and be able to chang
 
 ## UML
 
-![UML](UML1.png)
+![UML](UML.png)
