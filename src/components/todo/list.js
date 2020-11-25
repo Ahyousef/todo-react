@@ -11,9 +11,11 @@ function TodoList(props) {
               className={`complete-${item.complete.toString()}`}
               key={item._id}
             >
-              <span onClick={() => props.handleComplete(item._id)}>
-                {item.text}
-              </span>
+              <div onClick={() => props.handleComplete(item._id)}>
+                <span>Task : {item.text}</span>
+                <span> Assignee :{item.assignee}</span>
+                <span>Difficulty :{item.difficulty}</span>
+              </div>
               <p onClick={() => props.handleDelete(item._id)}>x</p>
             </li>
           ))}
